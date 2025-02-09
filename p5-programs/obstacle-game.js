@@ -153,7 +153,7 @@ class obstacle {
   }
 }
 
-function keyPressed() {
+function inputdetected() {
   if(!p.alive) {
     p = new player();
   
@@ -174,6 +174,14 @@ function keyPressed() {
   if(!p.jumping) {
     p.jump();
   }
+}
+
+function keyPressed() {
+  inputdetected();
+}
+
+function mousePressed() {
+  inputdetected();
 }
 
 function windowResized() {
