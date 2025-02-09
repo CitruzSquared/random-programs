@@ -192,3 +192,7 @@ function createCuboid() {
   
   return new cuboid(c, d, r);
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight, false);
+}
