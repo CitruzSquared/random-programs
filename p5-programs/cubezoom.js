@@ -15,7 +15,11 @@ function setup() {
 function draw() {
     background(0);
     translate(width / 2, height / 2);
-
+    noStroke();
+    fill(255);
+    textSize(20);
+    text("Press 'S' to toggle Stereoscopic mode", -width / 2 + 10, -height / 2 + 25);
+    stroke(255);
     for (let i = 0; i < array.length; i++) {
         array[i].move(speed);
         array[i].show();
